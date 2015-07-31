@@ -1,0 +1,26 @@
+<article class="comicContainer">
+  <h1>{{ page.episode }}. {{ page.title }}</h1>
+
+  {% for panel in page.script %}
+    <div class="comicContainer__panel">
+      <span>{{ panel.text }}</span>
+      <img src="{{ site.image_path }}/{{ page.image }}" style="margin-left: {{ panel.position }}px;" />
+    </div>
+  {% endfor %}
+</article>
+
+<menu class="comicMenu">
+  <div class="fb-like" data-href="http://existibot.com{{ page.url }}" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-via="existibot" data-hashtags="{% if page.tags %}{{ page.tags }}{% endif %}">Tweet</a>
+  
+  {% if page.previous %}
+    <a class="comicMenu__link comicMenu__link--prev" data-comictitle="{{ page.previous.title }}" href="{{ page.previous.url }}" rel="prev">&larr; Prev</a>
+  {% endif %}
+  {% if page.next %}
+    <a class="comicMenu__link comicMenu__link--next" data-comictitle="{{ page.next.title }}" href="{{ page.next.url }}" rel="next">Next &rarr;</a>
+  {% endif %}
+</menu>
+
+<script type="text/javascript">
+  ExistibotSettings.comic = true;
+</script>

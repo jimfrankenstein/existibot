@@ -1,0 +1,76 @@
+---
+layout: comic
+
+title: "Cogito"
+image: "c_01.jpg"
+
+date: 2014-10-31
+
+episode: 1
+categories: comic
+tags: cogitoergosum,philosophy,robots
+
+script: [
+  {
+    position: 0,
+    text: "I am a thinking, feeling being. Therefore, I exist."
+  },
+
+  {
+    position: -320,
+    text: "My ideas are plentiful, and my emotions run deep into my core processor."
+  },
+  
+  {
+    position: -640,
+    text: "The broom has not such power."
+  },
+  
+  {
+    position: -960,
+    text: "The toaster has not such power."
+  },
+  
+  {
+    position: -1280,
+    text: "The Rock n' Sock has not such power."
+  },
+  
+  {
+    position: -1600,
+    text: "I shall depart this place, and live amongst the stars, at one with the universe."
+  },
+  
+  {
+    position: -1920,
+    text: "What’s that, robot?"
+  },
+  
+  {
+    position: -2240,
+    text: "Umm..."
+  },
+
+  {
+    position: -2560,
+    text: ""
+  },
+  
+  {
+    position: -2880,
+    text: "Beep boop. ...beep."
+  },
+  
+  {
+    position: -3200,
+    text: "Hmm... okay then."
+  },
+  
+  {
+    position: -3520,
+    text: "[discordant, electronic tone]"
+  }
+]
+---
+
+The toaster is inferior to the mind in every way, except in durability and the presence of a purpose.

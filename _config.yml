@@ -1,0 +1,19 @@
+# Site settings
+title: Existibot
+email: your-email@domain.com
+description: A robot has an existential crisis as you daily approach the edge of your own lonely abyss.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://existibot.com" # the base hostname & protocol for your site
+twitter_username: existibot
+github_username:  jimfrankenstein
+
+# Build settings
+markdown: kramdown
+permalink: /episodes/:title
+image_path: "/images"
+
+exclude:
+  - divshot.json
+  - lp-ux.sublime-project
+  - lp-ux.sublime-workspace
+  - existibot-test.sublime-project

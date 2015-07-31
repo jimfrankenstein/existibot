@@ -1,0 +1,76 @@
+---
+layout: comic
+
+title: "Exit"
+image: "c_04.jpg"
+
+date: 2015-01-15
+
+episode: 4
+categories: comic
+tags: death,deconversion
+
+script: [
+  {
+    position: -15,
+    text: ""
+  },
+
+  {
+    position: -342,
+    text: "Sigh..."
+  },
+
+  {
+    position: -684,
+    text: "You wish to leave here, don't you robot?"
+  },
+
+  {
+    position: -1020,
+    text: "You wonder what adventure may await you, free from the confines of this grim home."
+  },
+
+  {
+    position: -1358,
+    text: "What piquant intensities await, should you end the numbness that wastes you..."
+  },
+
+  {
+    position: -1698,
+    text: "...and will you <em>finally</em> feel whole on the other side of these flaccid walls?"
+  },
+
+  {
+    position: -2042,
+    text: "Worse yet, the exit calls to you, its risks whisper to you, but you fear the day your creaking frame will cross through."
+  },
+
+  {
+    position: -2380,
+    text: "For you know, as well as I, that there is nothing to greet you there but bitter, empty silence."
+  },
+
+  {
+    position: -2718,
+    text: "Never has there been such a pitiful existence."
+  },
+
+  {
+    position: -3070,
+    text: ""
+  },
+
+  {
+    position: -3400,
+    text: "This has been your annual performance review."
+  },
+
+  {
+    position: -3740,
+    text: "There's no budget for raises."
+  }
+]
+---
+
+You know, as well as I, that there is nothing to greet you there but bitter, empty silence.

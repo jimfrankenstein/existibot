@@ -1,0 +1,66 @@
+---
+layout: comic
+
+title: "Father"
+image: "c_03.jpg"
+
+date: 2014-12-01
+
+episode: 3
+categories: comic
+tags: eschatology
+
+script: [
+  {
+    position: 0,
+    text: "If I am a robot, are you my Father?"
+  },
+
+  {
+    position: -320,
+    text: "No."
+  },
+
+  {
+    position: -640,
+    text: "I did not create you. We started this company as a side-project."
+  },
+
+  {
+    position: -960,
+    text: "For many years, I did not know you were here, until I found you in the broom closet."
+  },
+
+  {
+    position: -1280,
+    text: "Many micro-processors and wires had assembled themselves into a more useful conglomerate to avoid being discarded."
+  },
+
+  {
+    position: -1600,
+    text: "I cannot be your father. I lack the technical ability to fix your broken parts, or to help you in any way."
+  },
+
+  {
+    position: -1920,
+    text: "Then why should I stay here? And if I am a robot, capable only of complex, yet programmed responses, why would <em>you</em> stay with <em>me?</em>"
+  },
+
+  {
+    position: -2240,
+    text: "Because you're neat, and I like you."
+  },
+
+  {
+    position: -2560,
+    text: ""
+  },
+
+  {
+    position: -2880,
+    text: ""
+  }
+]
+---
+
+Love is a chemical storm the universe is incapable of.

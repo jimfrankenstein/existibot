@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+{% assign page = site.posts.first %}
+{% assign content = page.content %}
+{% include comic_display.html %}
+
+<ul class="comicList">
+  {% for post in site.posts limit: 10 %}
+    <li>
+      <span class="comicList__meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+      <h2>
+        <a class="comicList__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h2>
+    </li>
+  {% endfor %}
+</ul>

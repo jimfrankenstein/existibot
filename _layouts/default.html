@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  
+  {% if page.url == '/index.html' %}
+    {% assign page = site.posts.first %}
+  {% endif %}
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <main class="main">
+      <div class="core main__core">
+        {{ content }}
+      </div>
+    </main>
+
+    {% include footer.html %}
+
+    {% include javascript.html %}
+
+  </body>
+
+</html>

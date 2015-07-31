@@ -1,0 +1,210 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+@import "base";
+
+// @import 'fonts';
+
+
+/* HEADER */
+.header {
+  width: 100%;
+  position: fixed; left: 0; top: 0; z-index: 3;
+  text-align: center;
+}
+.header__core {
+  height: 120px; max-width: 1360px; min-width: 320px; width: 100%;
+  margin: 0 auto;
+  position: relative; text-align: left;
+
+  -webkit-transition: height 100ms ease-in-out;
+  -moz-transition: height 100ms ease-in-out;
+  -o-transition: height 100ms ease-in-out;
+  transition: height 100ms ease-in-out;
+}
+.messageBar { display: none; }
+.logo {
+  height: 100%;
+  display: block; float: left;
+
+  img {
+    height: 100%;
+    display: block;
+  }
+}
+
+/* BEGIN CONTENT */
+.main {
+  min-height: 100%; width: 100%;
+  margin-top: 120px;
+  position: relative; z-index: 1;
+  text-align: center;
+}
+
+.main__core {
+  max-width: 1360px; min-width: 320px; width: 100%;
+  margin: 0 auto;
+  color: #111; text-align: left;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.comicContainer {
+  background-attachment: fixed;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font: 16px/19px 'Courier New', Courier, monospace;
+  // font: 16px/19px 'Roboto', Courier, monospace;
+  width: 100%;
+  color: #464646; padding-top: 20px; position: relative;
+
+  &:before, &:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+  }
+  &:after { clear: both; }
+  
+  h1 {
+    font: 65px/65px 'Courier New', Courier, monospace;
+    // font: 65px/65px 'Roboto', Courier, monospace;
+    width: 90%;
+    display: block; padding: 0 5% 50px; text-align: right;
+  }
+  h2 {
+    font: 32px/32px 'Courier New', Courier, monospace;
+    // font: 32px/32px 'Roboto', Courier, monospace;
+    width: 90%;
+    display: block; float: right; padding: 25px 5% 0; text-align: right;
+  }
+}
+
+.comicContainer__panel {
+  width: 320px;
+  border: 1px solid #dfdfdf; display: block; float: left; overflow: hidden; margin: 10px 10px 50px; position: relative;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  span {
+    width: 90%;
+    display: block; margin: 10px auto 0; overflow: auto; text-align: center;
+  }
+
+  img {
+    height: 540px;
+    border: none;
+    display: block;
+    margin-top: 10px;
+  }
+}
+
+.comicMenu {
+  margin: 50px 0;
+  width: 100%;
+
+  &:before, &:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+  }
+  &:after { clear: both; }
+}
+
+.comicMenu__link {
+  color: #000;
+  font: 20px/32px 'Courier New', Courier, monospace;
+}
+.comicMenu__link--prev {
+  float: left;
+}
+.comicMenu__link--next {
+  float: right;
+}
+
+/* FOOTER */
+.footer {
+  width: 100%;
+  position: relative; z-index: 2;
+  text-align: left;
+
+}
+.footer__core {
+  font: 20px/32px 'Courier New', Courier, monospace;
+  // font: 20px/32px 'Roboto', Courier, monospace;
+  height: 100%; max-width: 1360px; min-width: 300px; width: 96%;
+  margin: 0 auto; padding: 2%;
+  position: relative;
+  text-align: left;
+}
+
+/* MEDIA QUERIES */
+
+/* 4-column */
+@media only screen and ( min-width: 1360px ) {
+  .core { width: 1360px; }
+
+  .header__core { height: 120px; }
+  .header__core.is-scrolling { height: 90px; }
+
+  .main { margin-top: 120px; }
+}
+/* 3-column */
+@media only screen and ( min-width: 1020px ) and ( max-width: 1359px ) {
+  .core { width: 1020px; }
+  
+  .header__core { height: 100px; }
+  .header__core.is-scrolling { height: 75px; }
+
+  .main { margin-top: 100px; }
+}
+/* 2-column */
+@media only screen and ( min-width: 680px ) and ( max-width: 1019px ) {
+  .core { width: 680px; }
+  
+  .header__core { height: 80px; }
+  .header__core.is-scrolling { height: 60px; }
+
+  .main { margin-top: 100px; }
+}
+/* 1-column */
+@media only screen and ( min-width: 320px ) and ( max-width: 679px ) {
+  .core { width: 320px; }
+  
+  .header__core { height: 80px; }
+  .header__core.is-scrolling { height: 40px; }
+
+  .main { margin-top: 80px; }
+
+  .comicContainer__panel {
+    border-left: none; border-right: none; border-top: none;
+    border-bottom: 1px solid #dfdfdf;
+    margin: 0 0 50px;
+
+    span { height: auto !important; }
+  }
+  .comicContainer h1 {
+    font: 30px/30px 'Courier New', Courier, monospace;
+  }
+}
+
+/* IE BIKE HELMETS */
+.ie {
+  .messageBar { background: #333; bottom: 0; color: #fff; display: block; height: 20px; left: 0; padding: 5px 20px; position: fixed; width: 100%; z-index: 20000 }
+  .messageBar__core { height: 20px; margin: 0 auto; text-align: left; width: 960px; }
+  .messageBar {
+    .warning { color: #f87a1e; font-weight: bold; }
+    a:link { color: #f87a1e; }
+    a:visited { color: #f87a1e; }
+    a:hover { color: #f87a1e; }
+    a:active { color: #f87a1e; }
+  }
+}
+
+

@@ -1,0 +1,37 @@
+html, body {
+  background: #ececec;
+  width: 100%;
+}
+body {
+  font: 16px/20px 'Courier New', Courier, monospace;
+  text-align: center;
+}
+html, head, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, select, option, form, fieldset, input, p, blockquote, th, td { margin: 0; padding: 0; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, main, nav, section { display: block; margin: 0; padding: 0; }
+strong { font-weight: bold; }
+em { font-style: italic; }
+ul, li { list-style: none; }
+img { border: none; }
+.clear { float: none; clear: both; height: 0; }
+.imgLink { display: block; }
+.hide { display: none; }
+.js .jsShow,
+.no-js .jsHide { display: none; }
+.js .jsHide,
+.no-js .jsShow { display: block; }
+.no-js .enableJSHeader { color: #f00; font-weight: bold; margin: 10px 0; }
+.fg:before, .fg:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+}
+.fg:after { clear: both; }
+
+a { cursor: pointer; text-decoration: none; }
+.caps { text-transform: capitalize; }
+.legalese { font: italic normal 10px/12px 'Courier New', Courier, monospace; }
+.lightBox { cursor: pointer; }
+.twoColList li { float: left; margin: 0 1% 0 0; width: 49%; }
+input.errMsg, .errField { border: 1px solid #f00 !important; }
+select.errMsg, select.errField { background: #f00 !important; color: #fff !important; }
+input.errMsg, select.errMsg { box-shadow: 0 0 10px #f00; -moz-box-shadow: 0 0 10px #f00; -webkit-box-shadow: 5px 5px 5px #f00; }
