@@ -12,8 +12,8 @@ markdown: kramdown
 permalink: /episodes/:title
 image_path: "/images"
 
+# Exclusions and Gems
 exclude:
-  - divshot.json
-  - lp-ux.sublime-project
-  - lp-ux.sublime-workspace
-  - existibot-test.sublime-project
+  - firebase.json
+
+gems: [octopress-autoprefixer,jekyll-coffeescript,jekyll-paginate]
